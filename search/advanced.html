@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Advanced Search</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Product Sans">
+		<style>
+		body {
+  			font-family: "Product Sans";
+			font-size: 60px;
+			text-align: center;
+		}
+		#google {
+			text-align: center;
+		}
+		.nav {
+  		background-color: white; 
+  		list-style-type: none;
+  		text-align: right; 
+  		font-size: 20px;
+		padding: 0;
+  		margin: 0;
+		}
+		form {
+			font-size: 15px;
+			text-align: left;
+		}
+		
+		label{
+			display: inline-block;
+			text-align: left;
+			width: 280px;
+		}
+
+		input{
+			display: inline-block;
+			text-align: left;
+			width: 280px;
+		}
+		
+		.center {
+			text-align: center;
+		}
+		button {
+			background-color: blue;
+			color: white;
+			font-size: 15px;
+			border-radius: 4px;
+		}
+		</style>
+    </head>
+    <body>
+		<nav class="nav">
+  			<a href="index.html">back to Word search</a>|
+		</nav>
+		<div id="google">
+			<span style="color:#4285F4">G</span>
+    		<span style="color:#DB4437">o</span>
+    		<span style="color:#F4B400">o</span>
+    		<span style="color:#4285F4">g</span>
+    		<span style="color:#F4B400">l</span>
+			<span style="color:#DB4437">e</span>
+		</div>
+		<br/>
+        <form action="https://google.com/search">
+            <label for="all">Find pages with all of these words:</label>
+			<input type="text" name="allthesewords"><br/>
+			<label for="exact">Find pages with exact these words:</label>
+			<input type="text" name="exactthesewords"><br/>
+			<label for="any">Find pages with any of these words:</label>
+			<input type="text" name="anyofthesewords"><br/>
+			<label for="none">Find pages with none of these words:</label>
+			<input type="text" name="noneofthesewords"><br/>
+			<input type="hidden" name="tbm" value="isch"><br/>
+            <div class="center">
+				<button type="submit">Advanced Search</button>
+			</div>
+        </form>
+    </body>
+	</html>
